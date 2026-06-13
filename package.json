@@ -1,0 +1,17 @@
+{
+  "name": "skill-context-bench",
+  "version": "0.1.0",
+  "description": "Two-axis benchmark (token cost + skill discovery) for skill/tool context bloat in coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Samwel Charles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younggeeks/skill-context-bench.git"
+  },
+  "homepage": "https://github.com/younggeeks/skill-context-bench#readme",
+  "scripts": {
+    "frontier": "node frontier.mjs",
+    "table": "node frontier-table.mjs"
+  }
+}

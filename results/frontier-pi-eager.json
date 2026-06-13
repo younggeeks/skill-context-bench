@@ -1,0 +1,40 @@
+{
+  "adapter": "pi (openai/gpt-4o)",
+  "cost": {
+    "base": 1046,
+    "rows": [
+      {
+        "skills": 0,
+        "tokens": 1046,
+        "deltaVs0": 0,
+        "perSkill": null
+      },
+      {
+        "skills": 25,
+        "tokens": 7964,
+        "deltaVs0": 6918,
+        "perSkill": 276.7
+      },
+      {
+        "skills": 50,
+        "tokens": 7964,
+        "deltaVs0": 6918,
+        "perSkill": 138.4
+      },
+      {
+        "skills": 100,
+        "tokens": 7964,
+        "deltaVs0": 6918,
+        "perSkill": 69.2
+      }
+    ]
+  },
+  "discovery": {
+    "count": 24,
+    "trials": 6,
+    "discovered": 6,
+    "applied": 6,
+    "discoveryRate": 1,
+    "applyRate": 1
+  }
+}
