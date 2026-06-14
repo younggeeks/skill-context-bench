@@ -26,12 +26,15 @@ to 100 installed skills (gpt-4o, measured):
 | Claude Code 2.1 | +66 | +164 | +322 |
 | Codex 0.139 | +171 | +171 | +171 |
 | Pi 0.79 | +6,918 | +6,918 | +6,918 |
+| opencode 1.3 | +3,430 | +7,555 | +15,805 |
 
-Claude Code grows slowly with skill count; Codex caps its list; **Pi sends about
-6,900 tokens of skill list on every call**, whether or not a skill is used.
+Two agents keep the list small: Claude Code grows slowly with skill count, and
+Codex caps it. Two don't: **Pi** sends a fixed ~6,900-token block on every call,
+and **opencode** has no cap at all — its list keeps growing, reaching ~16,000
+tokens at 100 skills (the largest here, and still climbing).
 
 The benchmark also confirms each agent can still pick the right skill for a
-matching task (all three can), so these numbers reflect a working skill system,
+matching task (all four can), so these numbers reflect a working skill system,
 not a broken one.
 
 ## Run it
@@ -42,7 +45,7 @@ node frontier.mjs --adapter pi --skills 0,25,50,100 --trials 6
 node frontier-table.mjs results/*.json     # render results as a table
 ```
 
-Adapters: `pi`, `claude-code`, `codex`.
+Adapters: `pi`, `claude-code`, `codex`, `opencode`.
 
 ## How the discovery check works
 

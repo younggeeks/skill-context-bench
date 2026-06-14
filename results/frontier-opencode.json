@@ -1,0 +1,40 @@
+{
+  "adapter": "opencode (openai/gpt-4o)",
+  "cost": {
+    "base": 18484,
+    "rows": [
+      {
+        "skills": 0,
+        "tokens": 18484,
+        "deltaVs0": 0,
+        "perSkill": null
+      },
+      {
+        "skills": 25,
+        "tokens": 21914,
+        "deltaVs0": 3430,
+        "perSkill": 137.2
+      },
+      {
+        "skills": 50,
+        "tokens": 26039,
+        "deltaVs0": 7555,
+        "perSkill": 151.1
+      },
+      {
+        "skills": 100,
+        "tokens": 34289,
+        "deltaVs0": 15805,
+        "perSkill": 158.1
+      }
+    ]
+  },
+  "discovery": {
+    "count": 24,
+    "trials": 6,
+    "discovered": 6,
+    "applied": 6,
+    "discoveryRate": 1,
+    "applyRate": 1
+  }
+}
